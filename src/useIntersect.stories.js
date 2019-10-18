@@ -28,6 +28,7 @@ function Card({ children, id, onIntersect, ...props }) {
     <SimpleCard ref={ref} className={`card card-${id}`} {...props}>
       {children}
       Card {isIntersecting ? 'onscreen' : 'offscreen'} - {nearest(threshold, 2)}
+      Some new text
     </SimpleCard>
   )
 }
